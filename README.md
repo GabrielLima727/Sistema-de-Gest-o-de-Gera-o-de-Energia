@@ -1,8 +1,8 @@
 #Sistema de Gestão de Geração de Energia - Banco de Dados
 
 Objetivo do Banco de Dados
-O banco de dados foi desenvolvido para gerenciar e armazenar informações relacionadas ao Sistema de Gestão de Geração de Energia. Ele contém informações sobre usinas de geração de energia, medidores de consumo, leituras de energia e manutenções realizadas nas usinas.
 
+O banco de dados foi desenvolvido para gerenciar e armazenar informações relacionadas ao Sistema de Gestão de Geração de Energia. Ele contém informações sobre usinas de geração de energia, medidores de consumo, leituras de energia e manutenções realizadas nas usinas.
 O objetivo principal é fornecer uma estrutura de dados eficiente para o controle e a visualização de consumos de energia, além de registrar manutenções e a capacidade de geração das usinas.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -10,9 +10,11 @@ O objetivo principal é fornecer uma estrutura de dados eficiente para o control
 Estrutura do Banco de Dados
 
 Tabelas
+
 O banco de dados é composto por quatro tabelas principais:
 
 USINAS
+
 Armazena informações sobre as usinas de geração de energia:
 
 USINA_ID (PK): Identificador único da usina.
@@ -23,6 +25,7 @@ LOCALIZACAO: Localização da usina.
 
 
 MEDIDORES
+
 Armazena informações sobre os medidores de consumo de energia:
 
 MEDIDOR_ID (PK): Identificador único do medidor.
@@ -32,6 +35,7 @@ TIPO: Tipo do medidor (ex: Monofásico, Trifásico).
 
 
 LEITURAS_ENERGIA
+
 Armazena as leituras de consumo de energia feitas pelos medidores:
 
 LEITURA_ID (PK): Identificador único da leitura.
@@ -41,6 +45,7 @@ CONSUMO: Quantidade de energia consumida (em kWh).
 
 
 MANUTENCOES
+
 Armazena informações sobre as manutenções realizadas nas usinas:
 
 MANUTENCAO_ID (PK): Identificador único da manutenção.
@@ -65,7 +70,7 @@ Utilizando o SQL*Plus
 1 - Abra o SQL*Plus e conecte-se ao seu banco de dados Oracle com o seguinte comando:
   sqlplus username/password@hostname:port/SID
 
-2 -Execute os scripts para criar as tabelas e popular os dados:
+2 - Execute os scripts para criar as tabelas e popular os dados:
   Criação das tabelas: Execute o script de criação das tabelas (create_tables.sql).
   Inserção de dados: Execute o script de inserção de dados (insert_data.sql).
   No SQL*Plus, você pode executar o script utilizando o comando:
@@ -82,7 +87,7 @@ Utilizando o SQL Developer
   Copie e cole o conteúdo do script de criação das tabelas no SQL Worksheet e clique em Run (ícone de "play").
   Copie e cole o script de inserção de dados e clique em Run novamente.
   
-Comandos de Commit
+Comandos de Commit:
 Após a execução dos scripts de inserção, você deve confirmar as transações com o comando:
   COMMIT;
   
